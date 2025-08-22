@@ -44,3 +44,21 @@ AWS (Amazon Web Services) is the **#1 cloud provider** (market leader since 2006
 - **Community & Ecosystem** → millions of customers, strong docs, certifications.  
 
 ---
+## 5. Trends of People Moving Back to Private Cloud
+
+Some companies are considering **cloud repatriation** (moving workloads back to private cloud).  
+
+**Reasons:**  
+- **High Costs** → Long-term public cloud bills can be higher.  
+- **Security & Compliance** → Sensitive industries prefer on-premises.  
+- **Performance** → Latency-sensitive apps may work better locally.  
+- **Predictable Costs** → For steady workloads, private infra can be cheaper.  
+
+👉 But overall, the **majority trend is still towards cloud adoption**, especially **hybrid cloud** (mix of public + private).  
+
+---
+
+## 6. AWS Account
+At the end of day1, I understand the overall usage of AWS and its importance in present day tech. I have created a AWS free tier account for personal use to learn about it.
+To create go to the link below.<br>
+https://aws.amazon.com/marketplace/management/signin?ref_=footer_nav_management_portal
