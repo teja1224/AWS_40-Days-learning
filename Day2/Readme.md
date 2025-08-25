@@ -4,6 +4,10 @@ IAM is the **security backbone of AWS**.
 It helps us control **who can access what** inside our AWS account.
 
 ---
+I have created a test user and login with IAM user. I observed access denied for all services as I didnot give any policies to test user. Later I login in root user and given S3 service policy permission. And checked with IAM test user now I can list and create sample S3 bucket.
+- Below I have given detailed explanation on each topic in IAM.
+
+---
 
 ## 1. IAM Users
 - An **IAM User** represents a single person or an application.  
