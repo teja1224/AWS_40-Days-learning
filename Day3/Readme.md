@@ -15,4 +15,28 @@ EC2 is one of the **core AWS services** and forms the foundation of running appl
 ## Types of EC2
 - There are different types of EC2 instances avaiable in AWS.
 - We need to decide which instance depending on application or work you are doing with it.
-- Types like General, Compute Optimized, Memory optimized ect and charges are vary depending on instance you choose.
+- Types like General, Compute Optimized, Memory optimized ect and charges are vary depending on the instance you choose.
+
+---
+
+# AWS Region and Availability Zones
+Before deep dive into EC2 we need to know about regions and availability zones.
+## What is a Region?
+- A **Region** is a **geographical area** where AWS has data centers.  
+- Each Region consists of multiple **Availability Zones (AZs)**.  
+- Example Regions:
+  - `us-east-1` → N. Virginia (USA)
+  - `ap-south-1` → Mumbai (India)
+
+👉 When we create an AWS resource (like EC2, RDS, S3 bucket), we choose a **Region**.
+
+## What is an Availability Zone (AZ)?
+- An **AZ** = a **separate data center** (or multiple data centers) within a Region.  
+- Each AZ has **independent power, cooling, and networking**.  
+- Regions usually have 2–6 AZs.  
+- Example: `us-east-1a`, `us-east-1b`
+
+We need to decide which region to select for EC2 instance. It depends on project you are working.
+If we are working on European Bank(client) then they may dont want to save there customers details outside their country.
+It also helps to reduce the latency while using application of EC2. (Server needs to respond as soon as possible).
+
