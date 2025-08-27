@@ -26,6 +26,11 @@ As I am learning at present I am using free tier to get basic understanding over
 ### Step 6: Launch the Instance
 - Click **Launch** → Instance will start running.
 - click on the instance id you'll get the complete instance details.
-
+## Connecting to EC2
 I present wokring on windows so I need to install putty or mobaxterm as our instance is ubantu.<br>
 If you are using linux machine then you can use your terminal.
+- we can connect to our EC2 using AWS inbuilt terminal but I am using MobaXterm.
+- First, Save the .pem (key pair) safely.
+- Go to MobaXterm and select a session give the public IP of EC2 instance and name(ubuntu).
+- Select advanced ssh setting select the private key and upload the .pem file here and click OK.
+- It may show a popup to accept. Accept that then your virtual server (EC2 instance) is connect successfully.
