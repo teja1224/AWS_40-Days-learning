@@ -23,3 +23,4 @@ Checking the traffic (how the NACL and SGs allowing IPs and port to access the a
 4. We wont get any response from the server as in security section in EC2 instance and see default secuirty group (by AWS).
 5. We find that it only allowing port 22 as SG acts as firewall at instance level, it blocks the incoming req to server(instance) even NACL allowing at entire subnet.
 6. We can check NACL configurations in VPC -> Network ACLs section can found inbound rules.
+7.  I checked the different configurations by changing NACL and SG by adding rules and order matters like low number to high number in NACL.
