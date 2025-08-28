@@ -11,22 +11,45 @@ It gives you complete control over your networking environment — including IP 
 
 ## Key Components of VPC
 1. **Subnets**
+   - Subnet is a range of ip addressed in your VPC. A subnet must reside in a single Availability Zone. After you add subnets, you can deploy AWS resources in your      VPC.
    - Public Subnet → Accessible from the internet (e.g., web servers).
    - Private Subnet → Internal only (e.g., databases, backend services).
 
-2. **Internet Gateway (IGW)**
+2. **IP Addressing**
+   - You can assign IP addresses, both IPv4 and IPv6, to your VPCs and subnets.
+   - You can also bring your public IPv4 and IPv6 GUA addresses to AWS and allocate them to resources in your VPC, such as EC2 instances, NAT gateways, and Network      Load Balancers.
+3. **Internet Gateway (IGW)**
    - Enables communication between VPC resources and the internet.
 
-3. **Route Tables**
+4. **Route Tables**
    - Rules that control where network traffic is directed inside your VPC.
 
-4. **NAT Gateway**
+5. **Gateways and endpoints**
+   - A gateway connects your VPC to another network. For example, use an internet gateway to connect your VPC to the internet.
+   - Use a VPC endpoint to connect to AWS services privately, without the use of an internet gateway or NAT device.
+
+6. **VPC Flow Logs** 
+   - A flow log captures information about the IP traffic going to and from network interfaces in your VPC.
+
+7. **VPN connections**
+   - Connect your VPCs to your private(on- premise) networks using AWS VPN (Virtual Private Network).
+    
+8. **NAT Gateway**
    - Lets instances in private subnets connect to the internet *outbound only*.
 
-5. **Security Groups (SG)**
+9. **Security Groups (SG)**
    - Virtual firewall for EC2 instances (stateful).
+   - A security group acts as a virtual firewall for instances (EC2 instances or other resources) within a VPC.
+   - It controls inbound and outbound traffic at the instance level.
+   - Security groups allow you to define rules that permit or restrict traffic based on protocols, ports, and IP addresses.  
 
-6. **Network ACLs (NACLs)**
+10. **Network ACLs (NACLs)**
    - Firewall for subnets (stateless).
+   - A Network Access Control List is a stateless firewall that controls inbound and outbound traffic at the subnet level.
+   - It operates at the IP address level and can allow or deny traffic based on rules that you define.
+   - NACLs provide an additional layer of network security for your VPC.
 
+---
+I used AWS Docs link below <br> to explore more.
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat.html
 ---
