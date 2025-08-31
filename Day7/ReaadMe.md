@@ -17,3 +17,4 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat
    - I found a issue with elastic IP addresses that shwoing maximum public IP addresses reached.
    - Go to ec2 -> Elastic IPs -> found previous work public Ip addresses -> release those IPs.
    - Back to VPC and CLick on retry. Then it got successful.
+If we assign EC2 instance with Elastic Ip address even if the EC2 instance goes down and comes back IP address remain same. ELastic IP addres is a static Ip address.
