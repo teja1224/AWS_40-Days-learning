@@ -31,3 +31,20 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat
 3. Loadbalancer
    - Takes the responsibility to seperate the requests incoming to 2 or more servers(instances).
    - It also checkd the computing power of instance and sends traffic according to it.
+  
+## Autoscaling group
+1. It cannot created direct as we need launch template. As we can use this for other autoscaling group.
+2. It looks like creating EC2 instance give the details. And in network setting select our vpc and create a security group.(one for ssh and other custom tcp for python app port 8000.
+3. Click next and select vpc and private subnets as in autoscaling group only our private instances should be there.
+4. Select group size (scaling options) -> Next.
+5. Launch the autoscaling. It creates 2 instances (private), can check it in EC2 instances.
+6. Instances dont have public ip address. To login we use bastion host (ec2 instance only, public).
+
+## Create bastion host 
+1. Go to ec2 and create a instance with our vpc and ssh login (network settings).
+2. We need to copy(secure copy) the key value pair to bastion host instance also as we need it to login to private instances.
+3. through ssh and key value pair login to public bastion host and then use the copied pem file and ssh to login to private instances.
+4. If .pem file not in bastion host(public) we cannot login to private instance where our application need to  set up.
+
+## Create a server(application) in private instance
+1. create a html page and python sample server(python3 -m http.server 8000) 
