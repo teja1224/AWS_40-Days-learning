@@ -17,4 +17,17 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat
    - I found a issue with elastic IP addresses that shwoing maximum public IP addresses reached.
    - Go to ec2 -> Elastic IPs -> found previous work public Ip addresses -> release those IPs.
    - Back to VPC and CLick on retry. Then it got successful.
-If we assign EC2 instance with Elastic Ip address even if the EC2 instance goes down and comes back IP address remain same. ELastic IP addres is a static Ip address.
+4. If we assign EC2 instance with Elastic Ip address even if the EC2 instance goes down and comes back IP address remain same. ELastic IP addres is a static Ip address.
+5. Finally AWS created a VPC for me. Till now we created a VPC with pub sub pri sub and pub sub attached to the route table and internet gateway and private subnet is attached to different routetables. Other things needed is EC2 instances(where our apps are present) and loadbalancer.
+
+### Concepts to learn before goahead in this project
+1. Bastion Host (Jump host)
+   - It is in public subnet helpful to connect to private subnets instead of directly connecting to private Ips.
+   - from personal laptop to Bastion host(public ec2) through ssh and then to private subnets.
+   - Benefits like properlogging mechanism to private Ips (who are access the apps in private ips).
+   - SSH traffic goes to private subnets through bastion host.
+2. Autoscaling group
+   - Used to scale the instances according to the incoming traffic.
+3. Loadbalancer
+   - Takes the responsibility to seperate the requests incoming to 2 or more servers(instances).
+   - It also checkd the computing power of instance and sends traffic according to it.
