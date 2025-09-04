@@ -47,4 +47,9 @@ https://docs.aws.amazon.com/vpc/latest/userguide/vpc-example-private-subnets-nat
 4. If .pem file not in bastion host(public) we cannot login to private instance where our application need to  set up.
 
 ## Create a server(application) in private instance
-1. create a html page and python sample server(python3 -m http.server 8000) 
+1. create a html page and python sample server(python3 -m http.server 8000)
+
+## create load balancer
+1. Choose application load balancer with details give same vpc, public subnets.
+2. We need to create target group so the load balancer will target the instances. also give sg.
+3. finally we can access the application in private subnet from outside we can copy DNS name and search it. We can see content in index.html
