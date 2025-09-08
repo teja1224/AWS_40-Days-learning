@@ -1,5 +1,5 @@
 # Hosting a Static Website on S3
-
+Yesterday I know in detail knowledge about S3.<br>
 Today I hosted a **static website** on Amazon S3 using `index.html` and `index.js`.  
 S3 makes it simple to serve static files like HTML, CSS, JS, and images.
 
@@ -53,3 +53,8 @@ S3 makes it simple to serve static files like HTML, CSS, JS, and images.
     }
   ]
 }
+```
+### Accessing the Static page
+- Got to index.html object in bucket.
+- You will find Object URL click on it. Then you can see the content.
+- Make sure your js file dont contain external cdn or apis used, it will trigger cors error by browser.
