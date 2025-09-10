@@ -34,3 +34,30 @@ Instead of manually creating resources via Console or CLI, IaC allows us to defi
 
 ---
 
+## Example: EC2 Instance with CloudFormation (YAML)
+
+```yaml
+AWSTemplateFormatVersion: "2010-09-09"
+Description: Simple EC2 instance using CloudFormation
+
+Parameters:
+  InstanceType:
+    Type: String
+    Default: t2.micro
+    Description: EC2 instance type
+
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: !Ref InstanceType
+      ImageId: ami-0c55b159cbfafe1f0   # Example Amazon Linux AMI ID
+      KeyName: my-keypair             # Must exist in your account
+      SecurityGroups:
+        - default
+
+Outputs:
+  InstanceId:
+    Description: ID of the EC2 instance
+    Value: !Ref MyEC2Instance
+```
