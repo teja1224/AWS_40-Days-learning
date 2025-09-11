@@ -7,6 +7,11 @@
 - Review and create.
 - Wait until Stack Status = CREATE_COMPLETE.
 
+## Drift Detection
+- AWS have a awesome feature which is used when a resource like EC2 instance is created using cft(IaC).
+- If any person change the features of EC2 instance manually by going through AWS management console(UI).
+- Then the drift detection feature in AWS CFT will show that a change is happened in it. Also provides some info about it.
+
 ## Key Takeaways
 - CloudFormation is AWS’s IaC tool for provisioning resources.
 - Templates can be written in YAML/JSON.
