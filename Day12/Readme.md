@@ -27,4 +27,38 @@ It is similar to **GitHub** or **GitLab**, but **fully managed by AWS**.
 - Store source code, scripts, configs in private repositories.  
 - Central repo for CI/CD pipelines in AWS.  
 - Secure alternative to GitHub/GitLab for sensitive projects.  
-- Code collaboration with teams using IAM policies.  
+- Code collaboration with teams using IAM policies.
+
+## How to Get Started with CodeCommit
+
+### 1. Create a Repository
+- Go to **AWS Console → CodeCommit → Create Repository**.  
+- Give repo name (e.g., `my-aws-app-repo`).  
+- (Optional) Add description and tags.  
+
+### 2. Setup Git Credentials
+- Create **IAM user** with CodeCommit access.  
+- Generate **HTTPS Git credentials** or configure **SSH keys**.  
+- Example IAM policy:
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "codecommit:*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+We can use normal git commands to clone and push and use this repo. First install git in our machine to use git commands.
+## Clone Repo
+- git clone https://git-codecommit.us-east-1.amazonaws.com/v1/repos/my-aws-app-repo
+- cd my-aws-app-repo
+
+## Push Code
+- git add .
+- git commit -m "first commit"
+- git push origin main
