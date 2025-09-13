@@ -54,3 +54,5 @@ Together, CI/CD ensures **faster releases**, **better quality**, and **less manu
 | Orchestration | **AWS CodePipeline** | Automate entire CI/CD pipeline (connects all stages). |
 
 ---
+
+Developer → CodeCommit → CodeBuild → CodeDeploy → Production (EC2/ECS/Lambda)
