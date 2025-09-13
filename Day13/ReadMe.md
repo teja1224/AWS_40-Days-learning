@@ -43,3 +43,14 @@ Together, CI/CD ensures **faster releases**, **better quality**, and **less manu
    - Canary, Blue-Green, or Rolling deployments for safe releases.  
 
 ---
+
+## AWS CI/CD Services
+
+| Stage      | AWS Service         | Purpose |
+|------------|--------------------|---------|
+| Source     | **AWS CodeCommit** | Store source code (Git). |
+| Build      | **AWS CodeBuild**  | Build & test code, create artifacts. |
+| Deploy     | **AWS CodeDeploy** | Deploy to EC2, Lambda, ECS, etc. |
+| Orchestration | **AWS CodePipeline** | Automate entire CI/CD pipeline (connects all stages). |
+
+---
