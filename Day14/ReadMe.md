@@ -56,4 +56,4 @@ In this final step, we'll trigger the CI process by making a change to our GitHu
 - Sit back and relax while AWS CodePipeline takes care of the rest. It will fetch the latest code, trigger the build process with AWS CodeBuild, and deploy the application if you configured the deployment stage.
 ---
 
-continue... Day15
+I successfully implemented continuous integration pipeline using AWS codebuild and github and also build and push the docker image to my docker hub.
