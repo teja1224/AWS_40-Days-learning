@@ -41,3 +41,5 @@ Today I connected my **Python project on GitHub** with **AWS CodePipeline** and 
 
 Successfully, created a codepipeline(orchestrater) for codebuild and connect my github repo.<br>
 Checked wheather the commit or change in my repo is triggering or invokeing the codepipeline->codebuild and observed that codebuild is triggered and by seeing build history and also my docker account.
+<br>
+Next want to focus on deploy (continous delivery) with EC2 instance.
