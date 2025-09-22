@@ -32,5 +32,12 @@ Today I connected my **Python project on GitHub** with **AWS CodePipeline** and 
 
 ---
 
+## Outcome
+- Every push to GitHub now automatically triggers a build.  
+- Developers get immediate feedback on build success/failure.  
+- Artifacts are ready in S3 for deployment.  
 
+---
 
+Successfully, created a codepipeline(orchestrater) for codebuild and connect my github repo.<br>
+Checked wheather the commit or change in my repo is triggering or invokeing the codepipeline->codebuild and observed that codebuild is triggered and by seeing build history and also my docker account.
