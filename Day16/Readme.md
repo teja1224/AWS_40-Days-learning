@@ -35,3 +35,22 @@ sudo service codedeploy-agent start
 
 ```
 
+## Setup IAM Roles
+- Service Role for CodeDeploy → allows CodeDeploy to manage deployments.
+- IAM Role for EC2 → allows EC2 instance to communicate with CodeDeploy and S3.
+
+## Create Deployment Group
+- Deployment group inside CodeDeploy app: simple-python-app-group.
+- Target: EC2 instance selected by tag.
+- Load balancer: Not enabled (simple setup).
+
+## Create Deployment
+- Chose GitHub as the source provider.
+- Connected my GitHub repo containing the app code.
+- Added an appspec.yml file in the root of the GitHub project to define deployment instructions.
+- You can find the appspec.yml in Day14 folder as i need to maintain all project files in single folder.
+
+## Outcome
+- Successfully deployed my Python application to EC2 directly from GitHub using CodeDeploy.
+- CodeDeploy agent on EC2 handled the deployment lifecycle as defined in appspec.yml.
+- In this project I understand overall CI/CD pipeline with simple project and setup. Will go deeper in upcoming projects.
