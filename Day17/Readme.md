@@ -1,4 +1,4 @@
-I had a great knowledge on entire CI/CD pipeline
+I had a great knowledge on entire CI/CD pipeline by yesterday. Moving forward in this Journey.
 
 # AWS Cloud Watch
 Today I am going to work deep-dive on cloudwatch in Aws which is one of the powerful service in AWS.
@@ -27,3 +27,28 @@ It helps you collect, analyze, and act on data from your AWS resources, applicat
 
 5. Events (now called EventBridge)
 - Respond to changes in AWS resources (e.g., trigger a Lambda when an EC2 instance stops).
+
+---
+
+## Common Use Cases
+- Monitor EC2 instances: CPU, memory, disk, and network.
+- Track application logs: Centralized logging for debugging.
+- Set alarms for scaling: Auto Scale EC2/Lambda based on demand.
+- Security monitoring: Detect unusual API activity with CloudWatch + GuardDuty.
+- Billing alerts: Get notified when costs exceed a budget.
+
+  ---
+
+## Example Scenarios in Real time Projects
+- DevOps Engineer: Sets alarms on CPU usage to auto-scale EC2 instances.
+- Developer: Sends application logs from Flask/Django app on EC2 to CloudWatch Logs.
+- SRE: Creates a CloudWatch dashboard to monitor multiple services in one view.
+- Finance team: Uses CloudWatch + Billing metrics to get monthly cost alerts.
+
+## How it Fits in Our CI/CD Project
+- CodeDeploy + CloudWatch Logs → View deployment logs from EC2 instances.
+- CloudWatch Alarms → Notify if deployment fails or app crashes.
+- CloudWatch Dashboards → Monitor app health after deployment.
+- In this way we need to check our service usage and information about services easily to take neccessary action to any errors or cost optimization for smooth work flow.
+
+Really amazed with the power of AWS Cloud watch and its capabilities.
