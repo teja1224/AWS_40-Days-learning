@@ -45,10 +45,14 @@ sudo service codedeploy-agent start
 - Load balancer: Not enabled (simple setup).
 
 ## Create Deployment
-- Chose GitHub as the source provider.
+- Choose GitHub as the source provider.
 - Connected my GitHub repo containing the app code.
 - Added an appspec.yml file in the root of the GitHub project to define deployment instructions.
 - You can find the appspec.yml in Day14 folder as i need to maintain all project files in single folder.
+
+## Connect to codepipeline (Add codedeploy to codepipeline flow after the build)
+- Now edit the pipeline and add stage, give the codedeploy details like app name, deployment group ect.
+- Trobbleshoot the errors as we learn by solving the errors and debugging. checking ec2 instance and viewevents in codedeploy.
 
 ## Outcome
 - Successfully deployed my Python application to EC2 directly from GitHub using CodeDeploy.
