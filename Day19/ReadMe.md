@@ -19,3 +19,20 @@ Comming to the topic, Today I want to work on AWS CloudFront.
 - Step 1: CloudFront checks if it already has the requested image in its cache (storage). If it does, great! It sends the image directly to the user. If not, it proceeds to Step 2.
 - Step 2: CloudFront fetches the image from the S3 bucket and stores a copy in its cache for future requests. Then, it sends the image to the user.
 - The next time someone requests the same image, CloudFront will deliver it from its cache, making it super fast and efficient!
+
+## Benefits of CloudFront
+- Fast Content Delivery: CloudFront ensures your content reaches users with minimal delay, making your website lightning fast.
+- Global Reach: With servers in various locations worldwide, CloudFront brings your content closer to users, regardless of where they are.
+- Security: CloudFront provides security features like DDoS protection and SSL/TLS encryption to keep your content and users safe.
+- Scalability: CloudFront can handle traffic spikes effortlessly, ensuring a smooth experience for your users.
+- Cost-Effective: Pay only for the data transfer and requests made, making it cost-effective for businesses of all sizes.
+
+## Use Cases and Scenarios
+Scenario 1: E-Commerce Website
+- Let's say you have an e-commerce website that sells products globally. By using CloudFront, your product images and videos load quickly for customers all over the world, improving the shopping experience.
+
+Scenario 2: Media Streaming
+- You're running a video streaming platform. With CloudFront, you can stream videos to users efficiently, regardless of their location, without buffering issues.
+
+## Conclusion
+- By using CloudFront, you can dramatically improve your website's performance, making users happier and potentially boosting your application and business.
