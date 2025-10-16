@@ -33,3 +33,15 @@ aws configure
 docker push <your-aws-account-id>.dkr.ecr.<your-region>.amazonaws.com/<your-repository-name>:<tag>
 ```
 
+## Pulling Docker Images from ECR
+- To pull and use the Docker images from ECR on another system or AWS service, follow these steps:
+- Log in to ECR using the AWS CLI as shown in Step 3 of the previous section.
+- Pull the Docker image from ECR:
+``` docker pull <your-aws-account-id>.dkr.ecr.<your-region>.amazonaws.com/<your-repository-name>:<tag>
+```
+
+## Cleaning Up Resources
+- As good practice, remember to clean up resources that you no longer need to avoid unnecessary costs. To delete an ECR repository:
+- Make sure there are no images in the repository, or delete the images using docker rmi locally.
+- Go to the AWS Management Console, navigate to the Amazon ECR service, and select your repository.
+- Click on "Delete" and confirm the action.
